@@ -234,6 +234,7 @@ def add_contact(args:tuple[str, ...], book: AddressBook) -> str:
         book.add_record(record)
         message = "Contact added."
     record.add_phone(phone)
+    
     return message
 
 @input_error
